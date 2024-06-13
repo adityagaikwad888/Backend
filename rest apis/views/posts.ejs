@@ -1,0 +1,13 @@
+<%- include("includes/head") %>
+<body>
+    <link rel="stylesheet" href="style.css"/>
+    <h2>Wall-Facers</h2>
+    <% for(post of posts)  { %>
+        <div class="container">
+            <h1> @<%=post.username%> </h1>
+            <P><%=post.content%></P>
+            <hr>
+        </div>
+    <% } %>
+</body>
+<%- include("includes/footer") %>

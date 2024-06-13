@@ -1,0 +1,19 @@
+<%- include("includes/head") %>
+<body>
+    <h2> --- This page Belongs to : <%= username %></h2>
+    <button>Follow</button>
+    <button>Messege</button>
+    <p>
+        Followers : <%= data.followers %> &nbsp;&nbsp;&nbsp;&nbsp; Following : <%= data.following %>
+    </p>
+    <hr />
+    <ul>
+        <% for (let post of data.posts) { %>
+            <img src="<%=post.image %>" alt="some img">
+            <p>
+                Likes : <%= post.likes %> &nbsp;&nbsp;&nbsp; Comments : <%= post.comments %>
+            </p>
+        <% } %>
+    </ul>
+</body>
+<%- include("includes/footer") %> 

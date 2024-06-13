@@ -1,0 +1,10 @@
+<%- include("includes/head") %>
+<body>
+    <link rel="stylesheet" href="newpost.css"/>
+    <form method="post" action="/posts">
+        <input placeholder="Enter username" name="username"/><br/><br/>
+        <textarea placeholder="Write Here " name="content"></textarea><br/><br/>
+        <button>Post</button>
+    </form>
+</body>
+<%- include("includes/footer")%>
