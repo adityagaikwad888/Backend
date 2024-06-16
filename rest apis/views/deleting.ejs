@@ -1,0 +1,19 @@
+<%- include("includes/head") %>
+<body>
+    <link rel="stylesheet" type="text/css" href="/style.css"/>
+    <div class="container">
+        <h1>Deleting Post ... </h1>
+        <h2> @<%=p.username%> </h1>
+        <p>
+            <%=p.content%>;
+        </p>
+        <hr>
+        <br>
+        <br>
+        <a class="inline-element" href="http://localhost:8080/posts">Back</a>
+        <form class="inline-element" method="post" action="/posts/<%=p.id%>?_method=DELETE">
+            <button class="delete-button">Conform</button>
+        </form>       
+    </div>
+</body>
+<%- include("includes/footer") %>

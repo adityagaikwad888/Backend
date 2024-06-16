@@ -17,6 +17,11 @@ form {
     max-width: 500px;
 }
 
+h1 {
+    color: #666;
+    font-size: 1.5em;
+}
+
 input, textarea {
     width: 100%;
     border: 1px solid #ddd;
@@ -24,7 +29,7 @@ input, textarea {
     border-radius: 5px;
     margin-bottom: 10px;
     box-sizing: border-box;
-    font-size: 1em;
+    font-size: 1.3em;
 }
 
 button {
